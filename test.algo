@@ -1,0 +1,29 @@
+ALGORITHM test
+VAR
+l : INTEGER := 0;
+w : INTEGER := 0;
+v : INTEGER := 0;
+c : CHAR;
+BEGIN
+    WHILE (c <> '.') DO
+    write('enter the character')
+    read(c);
+    l:=l+1;
+    IF (c=' ') THEN
+        w:=w+1;
+    END_IF
+    IF (c.toLowerCase()='a' OR c.toLowerCase()='e' OR c.toLowerCase()='i' OR c.toLowerCase()='o' OR c.toLowerCase()='i' OR c.toLowerCase()='y') THEN
+        v=v+1;
+    END_IF  
+    END_WHILE
+    write('the sentence length is')
+    write(l);
+
+    write('the words number')
+    write(w);
+
+    write('the vowels number')
+    write(v);
+    
+
+END
