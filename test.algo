@@ -17,7 +17,7 @@ BEGIN
     END_IF  
     END_WHILE
     write('the sentence length is')
-    write(l);
+    write(l+1);
 
     write('the words number')
     write(w);
